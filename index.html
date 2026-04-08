@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Elite Homes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Elite Homes</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Find Your Perfect Stay</h1>
+                <p>Discover unique homes and experiences around the world.</p>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Where do you want to go?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-in">Check-in</label>
+                        <input type="date" id="check-in" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Check-out</label>
+                        <input type="date" id="check-out" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <input type="number" id="guests" value="1" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="featured-properties-section">
+            <div class="container">
+                <h2>Featured Properties</h2>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <img src="https://via.placeholder.com/300x200?text=Luxury+Villa" alt="Luxury Villa">
+                        <h3>Luxury Beachfront Villa</h3>
+                        <p class="location">Malibu, California</p>
+                        <p class="price">$1200 / night</p>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://via.placeholder.com/300x200?text=Cozy+Apartment" alt="Cozy Apartment">
+                        <h3>Charming City Apartment</h3>
+                        <p class="location">Paris, France</p>
+                        <p class="price">$350 / night</p>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://via.placeholder.com/300x200?text=Mountain+Cabin" alt="Mountain Cabin">
+                        <h3>Rustic Mountain Cabin</h3>
+                        <p class="location">Aspen, Colorado</p>
+                        <p class="price">$580 / night</p>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://via.placeholder.com/300x200?text=Modern+Loft" alt="Modern Loft">
+                        <h3>Modern Downtown Loft</h3>
+                        <p class="location">New York, USA</p>
+                        <p class="price">$420 / night</p>
+                        <a href="#" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Elite Homes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
