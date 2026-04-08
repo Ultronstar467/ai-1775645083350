@@ -1,0 +1,437 @@
+/* Basic Reset & Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+.main-header {
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.logo:hover {
+    color: #34495e;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px;
+}
+
+.main-nav ul li a {
+    color: #555;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #3498db;
+}
+
+.btn-secondary {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #bdc3c7;
+}
+
+.btn-secondary:hover {
+    background-color: #dbe4e6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1500x800?text=Booking+Website+Hero') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.booking-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.booking-form .form-group {
+    flex: 1;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.booking-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="date"],
+.booking-form input[type="number"] {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.booking-form input:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.3);
+}
+
+.booking-form .btn {
+    align-self: flex-end; /* Aligns the button to the bottom of the flex container */
+    padding: 12px 25px;
+    font-size: 1.1em;
+    margin-top: auto; /* Pushes the button to the bottom if other inputs are taller */
+}
+
+/* Featured Properties */
+.featured-properties-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.featured-properties-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.property-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.property-card h3 {
+    font-size: 1.4em;
+    margin: 15px 15px 5px;
+    color: #2c3e50;
+}
+
+.property-card .location {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin: 0 15px 10px;
+}
+
+.property-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2980b9;
+    margin: 0 15px 20px;
+}
+
+.property-card .btn-secondary {
+    display: block;
+    width: calc(100% - 30px); /* Account for padding */
+    margin: 0 15px 15px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Common Sections (About, Contact) */
+.common-section {
+    padding: 80px 0;
+    min-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+}
+
+.common-section h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.common-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.common-section ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.common-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.common-section h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+/* Contact Page Specific */
+.contact-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info, .contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.contact-info h3, .contact-form-container h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.contact-info .social-links a {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.3);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn-primary {
+    width: auto;
+    padding: 12px 30px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+.main-footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav ul li {
+        margin: 0 15px 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-section p {
+        font-size: 1.1em;
+    }
+
+    .booking-form {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .booking-form .form-group {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .booking-form .btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .common-section {
+        padding: 50px 0;
+    }
+
+    .common-section h2 {
+        font-size: 2em;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info, .contact-form-container {
+        min-width: unset;
+        width: 100%;
+    }
+}
